@@ -1,2 +1,2 @@
 # shore-custom-cornhole
-Shore Custom Cornhole Websitet
+Shore Custom Cornhole Website

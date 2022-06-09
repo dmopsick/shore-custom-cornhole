@@ -8,14 +8,14 @@ import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles(theme => ({
     navBar: {
-        background: "#000000",
+        background: "#8090c2",
         paddingRight: "0px !important",
         height: "80px",
         color: "white"
     },
 
     header: {
-        fontFamily: "Bebas Neue !important",
+        fontFamily: "Lato !important",
         fontWeight: "bold !important",
         fontSize: "28px",
         color: "white",
@@ -50,4 +50,18 @@ export default function Header(props) {
     </React.Fragment>
 
     )
+}
+
+export function HideOnScroll(props) {
+    const {children} = props;
+    
+    const trigger = useScrollTrigger({
+        target: window
+    });
+
+    return (
+        <Slide appear={false} direction="down" in={!trigger}>
+            {children}
+        </Slide>
+    );
 }

@@ -1,6 +1,7 @@
 import { makeStyles } from '@mui/styles';
+import React from 'react';
 
-const usStyles = makeStyles(theme => ({
+const useStyles = makeStyles(theme => ({
 
 
 }));
@@ -10,14 +11,17 @@ export default function Footer() {
 
     return (
         <div style={{
-            background: "black",
+            background: "#8090c2",
             color: "white",
-            height: "200px",
+            height: "100px",
             paddingTop: "10px",
             paddingBottom: "20px",
             textAlign: "center"
         }}>
-            ShoreCustomCornhole@gmail.com 
+            <hr/>
+            <a href="mailto:shorecustomcornhole@gmail.com">
+                Shore Custom Cornhole
+            </a>
 
         </div>
     )

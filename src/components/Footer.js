@@ -20,7 +20,7 @@ export default function Footer() {
         }}>
             <hr/>
             <a href="mailto:shorecustomcornhole@gmail.com">
-                Shore Custom Cornhole
+                ShoreCustomCornhol@gmail.com
             </a>
 
         </div>

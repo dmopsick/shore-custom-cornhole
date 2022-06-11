@@ -160,59 +160,62 @@ export default function Home() {
                     textAlign: "left",
                     maxWidth: "450px"
                 }}>
-                     <p 
-                        style={{
-                            textAlign: "left",
-                            marginLeft: "20px"
-                        }}
-                     >
-                         Enter your email
-                     </p>
+                    <form>
+                        <p 
+                            style={{
+                                textAlign: "left",
+                                marginLeft: "20px"
+                            }}
+                        >
+                            Enter your email
+                        </p>
 
-                    <TextField  
-                        required
-                        id="emailInput"
-                        label="Email Address"
-                        placeholder='Enter Your Email Address'
-                        style={{
-                            width: "95%",
-                            maxWidth: "400px",
-                            marginLeft: "10px"
-                        }}
-                    />
-                     <p 
-                        style={{
-                            textAlign: "left",
-                            marginLeft: "20px",
-                            maxWidth: "400px"
-                        }}
-                     >
-                        Describe what you want your boards to look like and include any questions you have
-                     </p>
-                    <TextField 
-                        required
-                        multiline
-                        label="Design Description"
-                        placeholder="Describe your desired design"
-                        rows={4}
-                        style={{
-                            width: "95%",
-                            maxWidth: "400px",
-                            marginLeft: "10px"
-                        }}    
-                    />
-
-                    <div
-                        style={{
-                            textAlign: "center",
-                            marginTop: "10px"
-                        }}
-                    >
-                        <Button variant="contained" endIcon={<SendIcon />}>
-                            Submit
-                        </Button>
-                    </div>
-                    
+                        <TextField  
+                            required
+                            id="emailInput"
+                            label="Email Address"
+                            placeholder='Enter Your Email Address'
+                            style={{
+                                width: "95%",
+                                maxWidth: "400px",
+                                marginLeft: "10px"
+                            }}
+                        />
+                        <p 
+                            style={{
+                                textAlign: "left",
+                                marginLeft: "20px",
+                                maxWidth: "400px"
+                            }}
+                        >
+                            Describe your dream board design
+                        </p>
+                        <TextField 
+                            required
+                            multiline
+                            label="Design Description"
+                            placeholder="Describe your desired design"
+                            rows={4}
+                            style={{
+                                width: "95%",
+                                maxWidth: "400px",
+                                marginLeft: "10px"
+                            }}    
+                        />
+                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                        <div className="g-recaptcha" data-sitekey="6Lcm2mEgAAAAAOIiEjcY7ERvu8ebFw8j8wy1A_oN"></div>
+                        
+                        <div
+                            style={{
+                                textAlign: "center",
+                                marginTop: "10px"
+                            }}
+                        >
+                            <Button variant="contained" endIcon={<SendIcon />}>
+                                Submit
+                            </Button>
+                        </div>
+                    </form>
                 </Card>
             
             </div>

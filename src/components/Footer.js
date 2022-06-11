@@ -1,14 +1,6 @@
-import { makeStyles } from '@mui/styles';
 import React from 'react';
 
-const useStyles = makeStyles(theme => ({
-
-
-}));
-
 export default function Footer() {
-    const classes = useStyles();
-
     return (
         <div style={{
             background: "#8090c2",
@@ -20,7 +12,7 @@ export default function Footer() {
         }}>
             <hr/>
             <a href="mailto:shorecustomcornhole@gmail.com">
-                ShoreCustomCornhol@gmail.com
+                ShoreCustomCornhole@gmail.com
             </a>
 
         </div>

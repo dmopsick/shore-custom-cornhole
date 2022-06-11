@@ -32,13 +32,6 @@ const useStyles = makeStyles(theme => ({
         paddingTop: "25px"
     },
 
-    sectionHeader: {
-        fontSize: "56px",
-        margin: "auto",
-        textAlign: "center",
-        width: "98%"
-    },
-
     sectionCaption: {
         fontSize: "22px",
         width: "90%",
@@ -60,13 +53,16 @@ export default function Home() {
     return(
         <div className={classes.homeContainer}>
             <div className={classes.section}>
-                <img src={MetsGiantsBackground}  style={{
+                <img src={MetsGiantsBackground}  
+                    alt="New York Giants and Mets Cornhole boards"
+                    style={{
                         positon: "absolute",
                         width: "100%",
                         height: "100%",
                         objectFit: "cover",
                         zIndex: "-100"
-                    }} />
+                    }}
+                />
                  <div style={{   
                     zIndex: "100",
                     position: "absolute",
@@ -110,7 +106,7 @@ export default function Home() {
                 </p>
                 
                 <p className={classes.sectionText}>
-                    View my work in the <a href="#">Photo Gallery</a>
+                    View my work in the <a href="/gallery">Photo Gallery</a>
                 </p>
 
                 <Link to="contact"

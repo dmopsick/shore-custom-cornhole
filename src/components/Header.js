@@ -1,5 +1,4 @@
 import MenuIcon from '@mui/icons-material/Menu';
-import Logo from '../logo.svg';
 import { AppBar, Toolbar, IconButton, Slide } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import React from 'react';

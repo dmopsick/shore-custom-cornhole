@@ -4,6 +4,8 @@ import MetsGiantsBackground from '../images/giantsMets1.jpeg';
 import { Link } from "react-scroll";
 import Logo from '../logo.svg';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
 
 const useStyles = makeStyles(theme => ({
     section: {
@@ -27,9 +29,8 @@ const useStyles = makeStyles(theme => ({
         fontSize: "22px",
         width: "80%",
         margin: "auto",
-        marginTop: "15px",
-        marginBottom: "15px",
-        paddingTop: "25px"
+        marginTop: "10px",
+        marginBottom: "10px"
     },
 
     sectionCaption: {
@@ -74,13 +75,14 @@ export default function Home() {
                     alignContent: "center"
                     }}
                 >
-                    <img src={Logo}
-                        alt="Garden State Performance Logo"
-                        style={{
-                            width: "50%",
-                            flexBasis: "20%"
-                        
-                        }}
+    
+                     <img src={Logo}
+                            alt="Shore Custom Cornhole logo"
+                            style={{
+                                width: "50%",
+                                flexBasis: "20%",
+                                maxWidth: "400px"
+                            }}
                     />
 
                     <Link to="welcome"
@@ -102,11 +104,33 @@ export default function Home() {
             >
                 <h1 className={classes.sectionHeader}>Welcome</h1>
                 <p className={classes.sectionText}>
-                    Thank you for visiting Shore Custom Cornhole. My name is Scott McNamara and I have been making durable custom cornhole boards for 5 years. I’ve lived in Wall Township since 2006. I’m a  proud stay at home dad of 3 who took up woodworking as a hobby about 10 years ago. 
+                    My name is Scott McNamara and I have been making durable custom cornhole boards for 5 years. I've lived in Wall Township since 2006. I'm a  proud stay at home dad of 3 who took up woodworking as a hobby about 10 years ago. 
                 </p>
+
+                <div 
+                    style={{
+                        width: "50%",
+                        margin: "auto"
+                    }}>
+
+                    <Card style={{
+                        width: "100%",
+                        maxWidth: "325px",
+                        margin: "auto"
+                    }}>
+                        <CardMedia
+                            component="img"
+                       
+                            image="/images/yankeesChiefs1.jpeg"
+                            alt="Yankees and Chiefs"
+                        />
+                       
+                    </Card>
+
+                </div>
                 
                 <p className={classes.sectionText}>
-                    View my work in the <a href="/gallery">Photo Gallery</a>
+                    <a href="/gallery">View my work</a>
                 </p>
 
                 <Link to="contact"

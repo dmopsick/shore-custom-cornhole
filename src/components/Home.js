@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@mui/styles';
 import MetsGiantsBackground from '../images/giantsMets1.jpeg';
 import { Link } from "react-scroll";
-import Logo from '../logo.svg';
+import Logo from '../images/logo512.png';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
@@ -64,7 +64,8 @@ export default function Home() {
                         width: "100%",
                         height: "100%",
                         objectFit: "cover",
-                        zIndex: "-100"
+                        zIndex: "-100",
+                        filter: "grayscale(75%)"
                     }}
                 />
                  <div style={{   
@@ -80,12 +81,12 @@ export default function Home() {
                 >
     
                      <img src={Logo}
-                            alt="Shore Custom Cornhole logo"
-                            style={{
-                                width: "50%",
-                                flexBasis: "20%",
-                                maxWidth: "400px"
-                            }}
+                        alt="Shore Custom Cornhole logo"
+                        style={{
+                            width: "75%",
+                            flexBasis: "20%",
+                            maxWidth: "400px"
+                        }}
                     />
 
                     <Link to="welcome"
@@ -116,7 +117,9 @@ export default function Home() {
                         margin: "auto"
                     }}>
 
-                    <Card style={{
+                    <Card
+                         sx={{ boxShadow: 3 }}  
+                        style={{
                         width: "100%",
                         maxWidth: "325px",
                         margin: "auto"
@@ -152,7 +155,9 @@ export default function Home() {
                 <p className={classes.sectionText}>Fill out the form and I will respond with more information. All boards will be 2’x4’ in size using high quality 1/2” plywood for the top, and 1”x4” pine for the frame and legs</p>
                 
                
-                <Card style={{
+                <Card
+                    sx={{ boxShadow: 3 }} 
+                    style={{
                     width: "80%",
                     margin: "auto",
                     height: "415px",

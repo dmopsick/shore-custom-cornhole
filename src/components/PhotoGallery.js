@@ -78,7 +78,6 @@ export default function PhotoGallery() {
         setViewerIsOpen(false);
     };
 
-
     return(
         <div>
             <div className={classes.section}>

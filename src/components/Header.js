@@ -1,5 +1,4 @@
-import MenuIcon from '@mui/icons-material/Menu';
-import { AppBar, Toolbar, IconButton, Slide } from '@mui/material';
+import { AppBar, Toolbar, Slide } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import React from 'react';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
@@ -7,7 +6,7 @@ import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles(theme => ({
     navBar: {
-        background: "#8090c2",
+        background: "#c2b280",
         paddingRight: "0px !important",
         height: "80px",
         color: "white"
@@ -16,9 +15,10 @@ const useStyles = makeStyles(theme => ({
     header: {
         fontFamily: "Lato !important",
         fontWeight: "bold !important",
-        fontSize: "28px",
+        fontSize: "32px",
         color: "white",
-        textDecoration: "none"
+        textDecoration: "none",
+        margin: "auto"
     }
 }));
 
@@ -31,16 +31,7 @@ export default function Header(props) {
             <HideOnScroll {...props}>
                 <AppBar>
                     <Toolbar className={classes.navBar}>
-                        <a className={classes.header} href ="/">
-                            <IconButton
-                                edge="start"
-                                aria-label="home"
-                                style={{
-                                    marginRight: "5px"
-                                }}
-                            >
-                                <MenuIcon />
-                            </IconButton>
+                        <a className={classes.header} href ="/">       
                             Shore Custom Cornhole
                         </a>
                     </Toolbar>

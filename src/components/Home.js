@@ -149,12 +149,11 @@ export default function Home() {
 
             <div className={classes.section} id="contact"
                 style={{
-                    background: "#c28090"
+                    background: "#8090c2"
                 }}>
                 <h1 className={classes.sectionHeader}>Place Order</h1>
-                <p className={classes.sectionText}>Fill out the form and I will respond with more information. All boards will be 2’x4’ in size using high quality 1/2” plywood for the top, and 1”x4” pine for the frame and legs</p>
+                <p className={classes.sectionText}>Fill out the form and I will respond with more information in 2-4 business days. All boards will be 2’x4’ in size using high quality 1/2” plywood for the top, and 1”x4” pine for the frame and legs.</p>
                 
-               
                 <Card
                     sx={{ boxShadow: 3 }} 
                     style={{
@@ -222,7 +221,10 @@ export default function Home() {
                         </div>
                     </form>
                 </Card>
-            
+                
+                <p className={classes.sectionText}>
+                    <a href="/gallery">View my work</a>
+                </p>
             </div>
             
         </div>

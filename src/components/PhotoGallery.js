@@ -1,7 +1,8 @@
 import React, { useState, useCallback } from "react";
 import { makeStyles } from '@mui/styles';
 import Gallery from 'react-photo-gallery-react17'; 
-import Carousel, { Modal, ModalGateway } from "react-images";
+import Carousel, { Modal, ModalGateway } from 'react-images';
+import { photos } from './Photos';
 
 const useStyles = makeStyles(theme => ({
     section: {
@@ -18,49 +19,6 @@ const useStyles = makeStyles(theme => ({
         paddingTop: "80px"
     }
 }));
-
-const photos = [
-    {
-        src: "/images/yankeesChiefs1.jpeg",
-        width: 2,
-        height: 2
-    },
-    {
-        src: "/images/giantsMets1.jpeg",
-        width: 2,
-        height: 2
-    },
-    {
-        src: "/images/philliesEagles1.jpeg",
-        width: 2,
-        height: 2
-    },
-    {
-        src: "/images/yankeesChiefs2.jpeg",
-        width: 2,
-        height: 2
-    },
-    {
-        src: "/images/giantsMets2.jpeg",
-        width: 2,
-        height: 2
-    },
-    {
-        src: "/images/chiefs1.jpeg",
-        width: 2,
-        height: 2
-    },
-    {
-        src: "/images/giantsMets3.jpeg",
-        width: 2,
-        height: 2
-    },
-    {
-        src: "/images/yankees1.jpeg",
-        width: 2,
-        height: 2
-    }
-];
 
 export default function PhotoGallery() {
     const classes = useStyles();

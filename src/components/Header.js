@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     header: {
         fontFamily: "Lato !important",
         fontWeight: "bold !important",
-        fontSize: "32px",
+        fontSize: "28px",
         color: "white",
         textDecoration: "none",
         margin: "auto"

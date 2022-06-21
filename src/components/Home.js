@@ -1,12 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
-import MetsGiantsBackground from '../images/giantsMets1.jpeg';
 import { Link } from "react-scroll";
 import Logo from '../images/logo512.png';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
 import EmailForm from './EmailForm';
+import BackgroundSlider from 'react-background-slider';
 
 const useStyles = makeStyles(theme => ({
     section: {
@@ -15,7 +13,6 @@ const useStyles = makeStyles(theme => ({
 
     homeContainer: {
         color: "#000000",
-        background: "#80b1c2",
         textAlign: "center"  
     },
 
@@ -55,17 +52,11 @@ export default function Home() {
     return(
         <div className={classes.homeContainer}>
             <div className={classes.section}>
-                <img src={MetsGiantsBackground}  
-                    alt="New York Giants and Mets Cornhole boards"
-                    style={{
-                        positon: "absolute",
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                        zIndex: "-100",
-                        filter: "grayscale(75%)"
-                    }}
-                />
+            
+            <BackgroundSlider
+                images={['/images/giantsMets1.jpeg', '/images/yankeesChiefs1.jpeg', '/images/philliesEagles1.jpeg', '/images/giantsMets2.jpeg', '/images/yankeesChiefs2.jpeg', '/images/yankees1.jpeg', '/images/chiefs1.jpeg']}
+                duration={5} transition={1} />
+
                  <div style={{   
                     zIndex: "100",
                     position: "absolute",
@@ -75,10 +66,10 @@ export default function Home() {
                     flexWrap: "wrap",
                     justifyContent: "center",
                     alignContent: "center"
-                    }}
+                }}
                 >
     
-                     <img src={Logo}
+                    <img src={Logo}
                         alt="Shore Custom Cornhole logo"
                         style={{
                             width: "75%",
@@ -109,30 +100,10 @@ export default function Home() {
                     My name is Scott McNamara and I have been making durable custom cornhole boards for 5 years. I've lived in Wall Township since 2006. I'm a  proud stay at home dad of 3 who took up woodworking as a hobby about 10 years ago. 
                 </p>
 
-                <div 
-                    style={{
-                        width: "50%",
-                        margin: "auto"
-                    }}>
+                <p className={classes.sectionText}>
+                    All boards will be 2’x4’ in size using high quality 1/2” plywood for the top, and 1”x4” pine for the frame and legs.
+                </p>
 
-                    <Card
-                         sx={{ boxShadow: 3 }}  
-                        style={{
-                        width: "100%",
-                        maxWidth: "325px",
-                        margin: "auto"
-                    }}>
-                        <CardMedia
-                            component="img"
-                       
-                            image="/images/yankeesChiefs1.jpeg"
-                            alt="Yankees and Chiefs"
-                        />
-                       
-                    </Card>
-
-                </div>
-                
                 <p className={classes.sectionText}>
                     <a href="/gallery">View my work</a>
                 </p>
@@ -150,13 +121,16 @@ export default function Home() {
                     background: "#8090c2"
                 }}>
                 <h1 className={classes.sectionHeader}>Place Order</h1>
-                <p className={classes.sectionText}>Fill out the form and I will respond with more information in 2-4 business days. All boards will be 2’x4’ in size using high quality 1/2” plywood for the top, and 1”x4” pine for the frame and legs.</p>
+                <p className={classes.sectionText}>
+                    Fill out the form and I will respond with more information in 2-4 business days. 
+                    Boards start at $300. Price depends on the design. Local pick up only. 
+                    Order completion time is based on demand, but usually 2-3 weeks. 
+                    Bags are available at thee rate of $40 for 8 bags. 
+                    Cash and Venmo accepted. 
+                </p>
                 
                <EmailForm />
                 
-                <p className={classes.sectionText}>
-                    <a href="/gallery">View my work</a>
-                </p>
             </div>
             
         </div>

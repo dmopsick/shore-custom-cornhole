@@ -7,6 +7,7 @@ import { useState } from 'react';
 
 export default function EmailForm() {
     const [email, setEmail] = useState("");
+    const [designDescription, setDesignDescription] = useState("");
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -18,6 +19,7 @@ export default function EmailForm() {
         // Return some response to the user.. snack bar messages?
 
         alert('Entered email: ' + email);
+        alert('Entered Design description: ' + designDescription);
     }
 
     return (
@@ -26,7 +28,7 @@ export default function EmailForm() {
             style={{
             width: "80%",
             margin: "auto",
-            height: "415px",
+            height: "350px",
             paddingTop: "10px",
             textAlign: "left",
             maxWidth: "450px"
@@ -38,7 +40,7 @@ export default function EmailForm() {
                     marginLeft: "20px"
                 }}
             >
-                Enter your email
+  
             </p>
 
             <TextField  
@@ -63,9 +65,11 @@ export default function EmailForm() {
             >
                 Describe your dream board design
             </p>
-            <TextField 
-                required
+            <TextField required
                 multiline
+                id="designDescription"
+                value={designDescription}
+                onChange={(e) => setDesignDescription(e.target.value)}
                 label="Design Description"
                 placeholder="Describe your desired design"
                 rows={4}

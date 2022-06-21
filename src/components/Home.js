@@ -3,7 +3,6 @@ import { makeStyles } from '@mui/styles';
 import { Link } from "react-scroll";
 import Logo from '../images/logo512.png';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import EmailForm from './EmailForm';
 import BackgroundSlider from 'react-background-slider';
 
 const useStyles = makeStyles(theme => ({
@@ -97,6 +96,9 @@ export default function Home() {
             >
                 <h1 className={classes.sectionHeader}>Welcome</h1>
                 <p className={classes.sectionText}>
+                    <a href="/gallery">View my work</a>
+                </p>
+                <p className={classes.sectionText}>
                     My name is Scott McNamara and I have been making durable custom cornhole boards for 5 years. I've lived in Wall Township since 2006. I'm a  proud stay at home dad of 3 who took up woodworking as a hobby about 10 years ago. 
                 </p>
 
@@ -122,14 +124,22 @@ export default function Home() {
                 }}>
                 <h1 className={classes.sectionHeader}>Place Order</h1>
                 <p className={classes.sectionText}>
-                    Fill out the form and I will respond with more information in 2-4 business days. 
-                    Boards start at $300. Price depends on the design. Local pick up only. 
-                    Order completion time is based on demand, but usually 2-3 weeks. 
-                    Bags are available at thee rate of $40 for 8 bags. 
+                    Email <a href="mailto:ShoreCustomCornhole@gmail.com">ShoreCustomCornhole@gmail.com</a> and I will respond with more information in 2-4 business days. 
+                    It is helpful if you attach reference images for your design to the email.
+                    Boards start at $300. Price depends on the requested design. Local pick up only. 
+                    Order completion time is based on demand, but usually within 2-3 weeks. 
+                    Bags are available at thee rate of $40 for 8 bags. <br/>
                     Cash and Venmo accepted. 
                 </p>
+
+                <p className={classes.sectionText}>
+                Email <a href="mailto:ShoreCustomCornhole@gmail.com">ShoreCustomCornhole@gmail.com</a> with your dream design today!
+                </p>
                 
-               <EmailForm />
+                <p className={classes.sectionText}>
+                    <a href="/gallery">View my work</a>
+                </p>
+
                 
             </div>
             

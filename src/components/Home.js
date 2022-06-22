@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
 import { Link } from "react-scroll";
-import Logo from '../images/logo512.png';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import BackgroundSlider from 'react-background-slider';
 
@@ -67,22 +66,13 @@ export default function Home() {
                     alignContent: "center"
                 }}
                 >
-    
-                    <img src={Logo}
-                        alt="Shore Custom Cornhole logo"
-                        style={{
-                            width: "75%",
-                            flexBasis: "20%",
-                            maxWidth: "400px"
-                        }}
-                    />
 
-                    <Link to="welcome"
-                        smooth={true}
-                        duration={500}
-                        style={{color: "white", flexBasis: "100%"}}>
-                        <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
-                    </Link>
+                <Link to="welcome"
+                    smooth={true}
+                    duration={500}
+                    style={{color: "white", flexBasis: "100%"}}>
+                    <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
+                </Link>
                 
                 </div>
 
@@ -103,10 +93,6 @@ export default function Home() {
                 </p>
 
                 <p className={classes.sectionText}>
-                    All boards will be 2’x4’ in size using high quality 1/2” plywood for the top, and 1”x4” pine for the frame and legs.
-                </p>
-
-                <p className={classes.sectionText}>
                     <a href="/gallery">View my work</a>
                 </p>
 
@@ -122,10 +108,10 @@ export default function Home() {
                 style={{
                     background: "#8090c2"
                 }}>
-                <h1 className={classes.sectionHeader}>Place Order</h1>
+                <h1 className={classes.sectionHeader}>Get Quote</h1>
                 <p className={classes.sectionText}>
-                    Email <a href="mailto:ShoreCustomCornhole@gmail.com">ShoreCustomCornhole@gmail.com</a> and I will respond with more information in 2-4 business days. 
-                    It is helpful if you attach reference images for your design to the email.
+                    Fill out the <a href="https://forms.gle/ZgMHir8UTQBF48ji8" target="_blank" rel="noopener noreferrer">Shore Custom Cornhole Order Form</a> and I will respond with more information in 2-4 business days.
+                    It is helpful if you attach reference images for your design to the form.
                     Boards start at $300. Price depends on the requested design. Local pick up only. 
                     Order completion time is based on demand, but usually within 2-3 weeks. 
                     Bags are available at thee rate of $40 for 8 bags. <br/>
@@ -133,7 +119,7 @@ export default function Home() {
                 </p>
 
                 <p className={classes.sectionText}>
-                Email <a href="mailto:ShoreCustomCornhole@gmail.com">ShoreCustomCornhole@gmail.com</a> with your dream design today!
+                    <a href="https://forms.gle/ZgMHir8UTQBF48ji8" target="_blank" rel="noopener noreferrer">Shore Custom Cornhole Order Form</a>
                 </p>
                 
                 <p className={classes.sectionText}>

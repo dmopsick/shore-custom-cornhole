@@ -55,7 +55,7 @@ export default function Home() {
                 images={['/images/giantsMets1.jpeg', '/images/yankeesChiefs1.jpeg', '/images/philliesEagles1.jpeg', '/images/giantsMets2.jpeg', '/images/yankeesChiefs2.jpeg', '/images/yankees1.jpeg', '/images/chiefs1.jpeg']}
                 duration={5} transition={1}
                 style={{
-                    height: "100%"
+                    height: "700px"
                 }}
             />
 

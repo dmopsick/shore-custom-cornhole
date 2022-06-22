@@ -53,7 +53,11 @@ export default function Home() {
             
             <BackgroundSlider
                 images={['/images/giantsMets1.jpeg', '/images/yankeesChiefs1.jpeg', '/images/philliesEagles1.jpeg', '/images/giantsMets2.jpeg', '/images/yankeesChiefs2.jpeg', '/images/yankees1.jpeg', '/images/chiefs1.jpeg']}
-                duration={5} transition={1} />
+                duration={5} transition={1}
+                style={{
+                    height: "100%"
+                }}
+            />
 
                  <div style={{   
                     zIndex: "100",
@@ -115,7 +119,7 @@ export default function Home() {
                     Boards start at $300. Price depends on the requested design. Local pick up only. 
                     Order completion time is based on demand, but usually within 2-3 weeks. 
                     Bags are available at thee rate of $40 for 8 bags. <br/>
-                    Cash and Venmo accepted. 
+                    Cash or Venmo accepted. 
                 </p>
 
                 <p className={classes.sectionText}>

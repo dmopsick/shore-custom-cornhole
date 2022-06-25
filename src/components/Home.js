@@ -52,7 +52,7 @@ export default function Home() {
             <div className={classes.section}>
             
             <BackgroundSlider
-                images={['/images/giantsMets1.jpeg', '/images/yankeesChiefs1.jpeg', '/images/philliesEagles1.jpeg', '/images/giantsMets2.jpeg', '/images/yankeesChiefs2.jpeg', '/images/yankees1.jpeg', '/images/chiefs1.jpeg']}
+                images={['/images/giantsMets1.jpeg', '/images/yankeesChiefs1.jpeg', '/images/philliesEagles1.jpeg', '/images/giantsMets2.jpeg']}
                 duration={5} transition={1}
                 style={{
                     height: "700px"
@@ -88,12 +88,9 @@ export default function Home() {
                     background: "#80b1c2"
                 }}
             >
-                <h1 className={classes.sectionHeader}>Welcome</h1>
+                <h1 className={classes.sectionHeader}>Welcome to Shore Custom Cornhole!</h1>
                 <p className={classes.sectionText}>
-                    <a href="/gallery">View my work</a>
-                </p>
-                <p className={classes.sectionText}>
-                    My name is Scott McNamara and I have been making durable custom cornhole boards for 5 years. I've lived in Wall Township since 2006. I'm a  proud stay at home dad of 3 who took up woodworking as a hobby about 10 years ago. 
+                My name is Scott McNamara and I have been making durable, hand painted cornhole boards for 5 years. I've lived in Wall Township since 2006. I'm a proud stay at home dad of 3 who took up woodworking as a hobby about 10 years ago.
                 </p>
 
                 <p className={classes.sectionText}>
@@ -112,14 +109,21 @@ export default function Home() {
                 style={{
                     background: "#8090c2"
                 }}>
-                <h1 className={classes.sectionHeader}>Get Quote</h1>
+                <h1 className={classes.sectionHeader}>Get a Quote</h1>
                 <p className={classes.sectionText}>
                     Fill out the <a href="https://forms.gle/ZgMHir8UTQBF48ji8" target="_blank" rel="noopener noreferrer">Shore Custom Cornhole Order Form</a> and I will respond with more information in 2-4 business days.
-                    It is helpful if you attach reference images for your design to the form.
-                    Boards start at $300. Price depends on the requested design. Local pick up only. 
-                    Order completion time is based on demand, but usually within 2-3 weeks. 
-                    Bags are available at thee rate of $40 for 8 bags. <br/>
-                    Cash or Venmo accepted. 
+                </p>
+
+                <p className={classes.sectionText}>
+                    It is helpful if you attach reference images for your design to the form.  
+                </p>
+
+                <p className={classes.sectionText}>
+                    Price depends on the requested design.  
+                </p>
+
+                <p className={classes.sectionText}>
+                    Cash or Venmo accepted.
                 </p>
 
                 <p className={classes.sectionText}>

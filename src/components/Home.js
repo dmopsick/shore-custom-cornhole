@@ -6,7 +6,8 @@ import BackgroundSlider from 'react-background-slider';
 
 const useStyles = makeStyles(theme => ({
     section: {
-        height: "825px"
+        height: "825px",
+        backgroundSize: "cover !important"
     },
 
     homeContainer: {
@@ -49,10 +50,7 @@ export default function Home() {
 
     return(
         <div className={classes.homeContainer}>
-            <div className={classes.section}
-                style={{
-                    backgroundSize: "cover"
-                }}>
+            <div className={classes.section}>
             
             <BackgroundSlider
                 images={['/images/giantsMets1.jpeg', '/images/yankeesChiefs1.jpeg', '/images/philliesEagles1.jpeg', '/images/giantsMets2.jpeg']}

@@ -53,9 +53,10 @@ export default function Home() {
             
             <BackgroundSlider
                 images={['/images/giantsMets1.jpeg', '/images/yankeesChiefs1.jpeg', '/images/philliesEagles1.jpeg', '/images/giantsMets2.jpeg']}
-                duration={5} transition={1}
+                duration={3} transition={1}
                 style={{
-                    height: "825px"
+                    height: "825px",
+                    backgroundSize: "cover"
                 }}
             />
 

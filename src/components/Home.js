@@ -7,7 +7,9 @@ import BackgroundSlider from 'react-background-slider';
 const useStyles = makeStyles(theme => ({
     section: {
         height: "825px",
-        backgroundSize: "cover !important"
+        backgroundSize: "cover !important",
+        marginTop: "0 !important",
+        marginBottom: "0 !important"
     },
 
     homeContainer: {

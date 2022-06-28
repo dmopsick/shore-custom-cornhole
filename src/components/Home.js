@@ -33,7 +33,7 @@ const useStyles = makeStyles(theme => ({
         fontSize: "22px",
         width: "90%",
         margin: "auto",
-        marginTop: "15px",
+        paddingTop: "15px",
         marginBottom: "15px"
     },
 
@@ -49,15 +49,14 @@ export default function Home() {
 
     return(
         <div className={classes.homeContainer}>
-            <div className={classes.section}>
+            <div className={classes.section}
+                style={{
+                    backgroundSize: "cover"
+                }}>
             
             <BackgroundSlider
                 images={['/images/giantsMets1.jpeg', '/images/yankeesChiefs1.jpeg', '/images/philliesEagles1.jpeg', '/images/giantsMets2.jpeg']}
                 duration={3} transition={1}
-                style={{
-                    height: "825px",
-                    backgroundSize: "cover"
-                }}
             />
 
                  <div style={{   

@@ -55,7 +55,7 @@ export default function Home() {
             <div className={classes.section}>
             
             <BackgroundSlider
-                images={['/images/giantsMets1.jpeg', '/images/yankeesChiefs1.jpeg', '/images/philliesEagles1.jpeg', '/images/giantsMets2.jpeg']}
+                images={['/images/slideshow-images/giantsMets1S.jpeg', '/images/slideshow-images/yankeesChiefs1S.jpeg', '/images/slideshow-images/philliesEagles1S.jpeg', 'images/yankees2.jpeg', '/images/chiefs2.jpeg', '/images/slideshow-images/giantsMets2S.jpeg']}
                 duration={3} transition={1}
             />
 

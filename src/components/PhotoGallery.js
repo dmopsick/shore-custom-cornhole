@@ -6,9 +6,10 @@ import { photos } from './Photos';
 
 const useStyles = makeStyles(theme => ({
     section: {
-        height: "1100px",
+        height: "100%",
         background: "#8090c2",
-        color: "white"
+        color: "white",
+        paddingBottom: "25px"
     },
 
     sectionHeader: {
@@ -16,7 +17,7 @@ const useStyles = makeStyles(theme => ({
         margin: "auto",
         textAlign: "center",
         width: "98%",
-        paddingTop: "80px"
+        paddingTop: "160px"
     }
 }));
 

@@ -1,3 +1,4 @@
+// Photos for the PhotoGallery -- Put here to save space on the file
 export const photos = [
     {
         src: "/images/yankeesChiefs1.jpeg",
@@ -25,12 +26,12 @@ export const photos = [
         height: 2
     },
     {
-        src: "/images/giantsMets2.jpeg",
+        src: "/images/chiefs1.jpeg",
         width: 2,
         height: 2
     },
     {
-        src: "/images/chiefs1.jpeg",
+        src: "/images/giantsMets3.jpeg",
         width: 2,
         height: 2
     },
@@ -50,7 +51,7 @@ export const photos = [
         height: 2
     },
     {
-        src: "/images/giantsMets3.jpeg",
+        src: "/images/giantsMets2.jpeg",
         width: 2,
         height: 2
     }

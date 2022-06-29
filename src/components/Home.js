@@ -60,7 +60,8 @@ export default function Home() {
                 duration={3} 
                 transition={1}
                 style={{
-                    marginBottom: "0px !important"
+                    marginBottom: "0px !important",
+                    height: "100%"
                 }}
             />
 

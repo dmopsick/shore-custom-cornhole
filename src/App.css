@@ -20,3 +20,9 @@ h1, h2, h3, h4, h5, h5 {
 p, a, label, span, li {
   font-family: "Lato" !important;
 }
+
+#ReactBackgroundSlider {
+  background-size:     cover; 
+  height: 100%;
+  margin-bottom: 0px;
+}

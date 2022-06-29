@@ -55,7 +55,27 @@ export default function Home() {
         <div className={classes.homeContainer}>
             <div className={classes.section}>
 
+                <div 
+                    style={{   
+                        zIndex: "100",
+                        position: "absolute",
+                        width: "100%",
+                        top: "50%",
+                        display: "flex",
+                        flexWrap: "wrap",
+                        justifyContent: "center",
+                        alignContent: "center"
+                    }}
+                >
+
+                    <Link to="welcome"
+                        smooth={true}
+                        duration={500}
+                        style={{color: "white", flexBasis: "100%"}}>
+                        <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
+                    </Link>
                 
+                </div> 
             
                 <BackgroundSlider
                     images={['/images/slideshow-images/giantsMets1S.jpeg', '/images/slideshow-images/yankeesChiefs1S.jpeg', '/images/slideshow-images/philliesEagles1S.jpeg', 'images/yankees2.jpeg', '/images/chiefs2.jpeg', '/images/slideshow-images/giantsMets2S.jpeg']}

@@ -53,23 +53,9 @@ export default function Home() {
 
     return(
         <div className={classes.homeContainer}>
-            <div className={classes.section}
-                style={{
-                    background: "salmon"
-                }}
-            >
-            
-            <BackgroundSlider
-                images={['/images/slideshow-images/giantsMets1S.jpeg', '/images/slideshow-images/yankeesChiefs1S.jpeg', '/images/slideshow-images/philliesEagles1S.jpeg', 'images/yankees2.jpeg', '/images/chiefs2.jpeg', '/images/slideshow-images/giantsMets2S.jpeg']}
-                duration={3} 
-                transition={1}
-                style={{
-                    marginBottom: "0px !important",
-                    height: "100%"
-                }}
-            />
+            <div className={classes.section}>
 
-                 <div 
+            <div 
                     style={{   
                         zIndex: "100",
                         position: "absolute",
@@ -90,6 +76,19 @@ export default function Home() {
                 </Link>
                 
                 </div>
+            
+            <BackgroundSlider
+                images={['/images/slideshow-images/giantsMets1S.jpeg', '/images/slideshow-images/yankeesChiefs1S.jpeg', '/images/slideshow-images/philliesEagles1S.jpeg', 'images/yankees2.jpeg', '/images/chiefs2.jpeg', '/images/slideshow-images/giantsMets2S.jpeg']}
+                duration={3} 
+                transition={1}
+                style={{
+                    margin: "0px !important",
+                    padding: "0px !important",
+                    height: "100%"
+                }}
+            />
+
+          
 
 
             </div>

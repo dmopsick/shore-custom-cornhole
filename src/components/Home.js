@@ -2,16 +2,10 @@ import React from 'react';
 import { makeStyles } from '@mui/styles';
 import { Link } from "react-scroll";
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import BackgroundSlider from 'react-background-slider';
-import giantsMets1 from '../images/giantsMets1.jpeg';
-
 
 const useStyles = makeStyles(theme => ({
     section: {
-        height: "825px",
-        backgroundSize: "cover !important",
-        marginTop: "0 !important",
-        marginBottom: "0 !important"
+        height: "825px"
     },
 
     homeContainer: {
@@ -48,8 +42,12 @@ const useStyles = makeStyles(theme => ({
         color: "white"
     },
 
-    backgroundSlides {
-
+    sectionWithBackgroundImage: {     
+        height: "825px",       
+        backgroundImage: `url('/images/slideshow-images/giantsMets1S.jpeg')`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "50% 50%" 
     }
 
 }));
@@ -59,7 +57,7 @@ export default function Home() {
 
     return(
         <div className={classes.homeContainer}>
-            <div className={classes.section}>
+            <div className={classes.sectionWithBackgroundImage}>
 
                 <div 
                     style={{   
@@ -83,13 +81,7 @@ export default function Home() {
                 
                 </div> 
             
-                <img class="backgroundSlide" src={giantsMets1} />
-                    
-        
-
-          
-
-
+                
             </div>
 
             <div id="welcome" className={classes.section} 

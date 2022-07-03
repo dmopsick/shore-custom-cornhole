@@ -57,7 +57,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function Home() {
     const classes = useStyles();
-    var myIndex = 0;
+    var myIndex = 1;
 
 
     useEffect( () => {

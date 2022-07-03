@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { makeStyles } from '@mui/styles';
 import { Link } from "react-scroll";
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
@@ -42,46 +42,112 @@ const useStyles = makeStyles(theme => ({
         color: "white"
     },
 
-    sectionWithBackgroundImage: {     
-        height: "825px",       
-        backgroundImage: `url('/images/slideshow-images/giantsMets1S.jpeg')`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "50% 50%" 
+    movingArrowContainer: {
+        zIndex: "100",
+        position: "absolute",
+        width: "100%",
+        top: "50%",
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        alignContent: "center"
     }
 
 }));
 
 export default function Home() {
     const classes = useStyles();
+    var myIndex = 0;
+
+
+    useEffect( () => {
+
+        const backgroundSlider = setInterval(() => {
+            var i;
+            var x = document.querySelectorAll('.sectionWithBackgroundImage');
+      
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            } 
+            // Hide previous   
+            x[myIndex-1].style.display = "block";    
+            
+            }, 3000);
+          
+
+        return () => clearInterval(backgroundSlider);
+    });
 
     return(
         <div className={classes.homeContainer}>
-            <div className={classes.sectionWithBackgroundImage}>
-
-                <div 
-                    style={{   
-                        zIndex: "100",
-                        position: "absolute",
-                        width: "100%",
-                        top: "50%",
-                        display: "flex",
-                        flexWrap: "wrap",
-                        justifyContent: "center",
-                        alignContent: "center"
-                    }}
-                >
-
+            <div id="giantsMets1Slide" className='sectionWithBackgroundImage'>
+                <div className={classes.movingArrowContainer}>
                     <Link to="welcome"
                         smooth={true}
                         duration={500}
                         style={{color: "white", flexBasis: "100%"}}>
                         <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
                     </Link>
-                
-                </div> 
-            
-                
+                </div>   
+            </div>
+
+            <div id="philliesEagles1Slide" className='sectionWithBackgroundImage'>
+                <div className={classes.movingArrowContainer}>
+                    <Link to="welcome"
+                        smooth={true}
+                        duration={500}
+                        style={{color: "white", flexBasis: "100%"}}>
+                        <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
+                    </Link>
+                </div>   
+            </div>
+
+            <div id="yankeesChiefs1Slide" className='sectionWithBackgroundImage'>
+                <div className={classes.movingArrowContainer}>
+                    <Link to="welcome"
+                        smooth={true}
+                        duration={500}
+                        style={{color: "white", flexBasis: "100%"}}>
+                        <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
+                    </Link>
+                </div>   
+            </div>
+
+            <div id="giantsMets2Slide" className='sectionWithBackgroundImage'>
+                <div className={classes.movingArrowContainer}>
+                    <Link to="welcome"
+                        smooth={true}
+                        duration={500}
+                        style={{color: "white", flexBasis: "100%"}}>
+                        <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
+                    </Link>
+                </div>   
+            </div>
+
+            <div id="yankees1Slide" className='sectionWithBackgroundImage'>
+                <div className={classes.movingArrowContainer}>
+                    <Link to="welcome"
+                        smooth={true}
+                        duration={500}
+                        style={{color: "white", flexBasis: "100%"}}>
+                        <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
+                    </Link>
+                </div>   
+            </div>
+
+            <div id="chiefs1Slide" className='sectionWithBackgroundImage'>
+                <div className={classes.movingArrowContainer}>
+                    <Link to="welcome"
+                        smooth={true}
+                        duration={500}
+                        style={{color: "white", flexBasis: "100%"}}>
+                        <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
+                    </Link>
+                </div>   
             </div>
 
             <div id="welcome" className={classes.section} 
@@ -139,5 +205,6 @@ export default function Home() {
             </div>
             
         </div>
-    )
+    );
+    
 }

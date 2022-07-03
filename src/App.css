@@ -20,3 +20,37 @@ h1, h2, h3, h4, h5, h5 {
 p, a, label, span, li {
   font-family: "Lato" !important;
 }
+
+.sectionWithBackgroundImage {
+  display: none;
+  height: 825px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/* Background images for the slideshow. This is not the best way but I can make it work for now */
+#giantsMets1Slide {
+  display: block;
+  background-image: url('/images/slideshow-images/giantsMets1S.jpeg');
+}
+
+#giantsMets2Slide {
+  background-image: url('/images/slideshow-images/giantsMets2S.jpeg');
+}
+
+#philliesEagles1Slide {
+  background-image: url('/images/slideshow-images/philliesEagles1S.jpeg');
+}
+
+#yankeesChiefs1Slide {
+  background-image: url('/images/slideshow-images/yankeesChiefs1S.jpeg');
+}
+
+#yankees1Slide {
+  background-image: url('/images/yankees1S.jpeg');
+}
+
+#chiefs1Slide {
+  background-image: url('/images/chiefs1S.jpeg');
+}

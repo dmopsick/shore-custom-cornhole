@@ -3,6 +3,8 @@ import { makeStyles } from '@mui/styles';
 import { Link } from "react-scroll";
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import BackgroundSlider from 'react-background-slider';
+import giantsMets1 from '../images/giantsMets1.jpeg';
+
 
 const useStyles = makeStyles(theme => ({
     section: {
@@ -44,6 +46,10 @@ const useStyles = makeStyles(theme => ({
     movingArrow: {
         animation: "arrow-jump 1s infinite",
         color: "white"
+    },
+
+    backgroundSlides {
+
     }
 
 }));
@@ -77,16 +83,9 @@ export default function Home() {
                 
                 </div> 
             
-                <BackgroundSlider
-                    images={['/images/slideshow-images/giantsMets1S.jpeg', '/images/slideshow-images/yankeesChiefs1S.jpeg', '/images/slideshow-images/philliesEagles1S.jpeg', 'images/yankees2.jpeg', '/images/chiefs2.jpeg', '/images/slideshow-images/giantsMets2S.jpeg']}
-                    duration={3} 
-                    transition={1}
-                    style={{
-                        margin: "0px !important",
-                        padding: "0px !important",
-                        height: "100%"
-                    }}
-                />
+                <img class="backgroundSlide" src={giantsMets1} />
+                    
+        
 
           
 

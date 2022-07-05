@@ -43,7 +43,8 @@ export default function PhotoGallery() {
                 <h2 className={classes.sectionHeader}>Gallery</h2>
                 <p 
                     style={{
-                        textAlign: "center"
+                        textAlign: "center",
+                        marginBottom: "25px"
                     }}
                 >
                     View some of my previous work

@@ -95,6 +95,17 @@ export default function Home() {
                 </div>   
             </div>
 
+            <div id="compass1Slide" className='sectionWithBackgroundImage'>
+                <div className={classes.movingArrowContainer}>
+                    <Link to="welcome"
+                        smooth={true}
+                        duration={500}
+                        style={{color: "white", flexBasis: "100%"}}>
+                        <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
+                    </Link>
+                </div>   
+            </div>
+
             <div id="philliesEagles1Slide" className='sectionWithBackgroundImage'>
                 <div className={classes.movingArrowContainer}>
                     <Link to="welcome"
@@ -107,6 +118,17 @@ export default function Home() {
             </div>
 
             <div id="yankeesChiefs1Slide" className='sectionWithBackgroundImage'>
+                <div className={classes.movingArrowContainer}>
+                    <Link to="welcome"
+                        smooth={true}
+                        duration={500}
+                        style={{color: "white", flexBasis: "100%"}}>
+                        <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
+                    </Link>
+                </div>   
+            </div>
+
+            <div id="anchor1Slide" className='sectionWithBackgroundImage'>
                 <div className={classes.movingArrowContainer}>
                     <Link to="welcome"
                         smooth={true}

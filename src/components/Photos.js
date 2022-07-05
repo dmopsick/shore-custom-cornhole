@@ -11,12 +11,22 @@ export const photos = [
         height: 2
     },
     {
+        src: "/images/compassAnchor1.jpeg",
+        width: 2,
+        height: 2
+    },
+    {
         src: "/images/philliesEagles1.jpeg",
         width: 2,
         height: 2
     },
     {
         src: "/images/chiefs3.jpeg",
+        width: 2,
+        height: 2
+    },
+    {
+        src: "images/anchor1.jpeg",
         width: 2,
         height: 2
     },
@@ -31,12 +41,22 @@ export const photos = [
         height: 2
     },
     {
+        src: "/images/compass1.jpeg",
+        width: 2,
+        height: 2
+    },
+    {
         src: "/images/giantsMets3.jpeg",
         width: 2,
         height: 2
     },
     {
         src: "/images/yankees1.jpeg",
+        width: 2,
+        height: 2
+    },
+    {
+        src: "/images/anchor2.jpeg",
         width: 2,
         height: 2
     },
@@ -52,6 +72,11 @@ export const photos = [
     },
     {
         src: "/images/giantsMets2.jpeg",
+        width: 2,
+        height: 2
+    },
+    {
+        src: "/images/compass2.jpeg",
         width: 2,
         height: 2
     }

@@ -48,17 +48,13 @@ p, a, label, span, li {
 }
 
 #yankees1Slide {
-  background-image: url('/images/yankees2.jpeg');
+  background-image: url('/images/slideshow-images/yankees2S.jpeg');
 }
 
 #chiefs1Slide {
-  background-image: url('/images/chiefs2.jpeg');
+  background-image: url('/images/slideshow-images/chiefs3S.jpeg');
 }
 
-#compass1Slide {
-  background-image: url('/images/compass1.jpeg');
-}
-
-#anchor1Slide {
-  background-image: url('/images/anchor1.jpeg');
+#compassAnchor1Slide {
+  background-image: url('/images/slideshow-images/compassAnchor1S.jpeg');
 }

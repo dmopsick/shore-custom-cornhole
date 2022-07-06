@@ -42,7 +42,7 @@ export default function PhotoGallery() {
                  <p style={{
                     textAlign: "left",
                     marginLeft: "20px",
-                    paddingTop: "160px"
+                    paddingTop: "200px"
                 }}>
                     <a href="/">&lt; Return Home</a>
                 </p>

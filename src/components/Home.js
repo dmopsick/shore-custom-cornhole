@@ -197,6 +197,10 @@ export default function Home() {
                 </p>
 
                 <p className={classes.sectionText}>
+                    No Gmail account? No problem! Just email me at <a href="mailto:shorecustomcornhole@gmail.com">shorecustomcornhole@gmail.com</a> with your design ideas and images.
+                </p>
+
+                <p className={classes.sectionText}>
                     Price depends on the requested design.  
                 </p>
 
@@ -212,7 +216,6 @@ export default function Home() {
                     <a href="/gallery">View my work</a>
                 </p>
 
-                
             </div>
             
         </div>

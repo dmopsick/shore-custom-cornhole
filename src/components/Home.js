@@ -168,7 +168,7 @@ export default function Home() {
             >
                 <h1 className={classes.sectionHeader}>Welcome to Shore Custom Cornhole!</h1>
                 <p className={classes.sectionText}>
-                    My name is Scott McNamara and I have been making durable, hand painted cornhole boards for 5 years. I've lived in Wall Township since 2006. I'm a proud stay at home dad of 3 who took up woodworking as a hobby about 10 years ago.
+                    My name is Scott McNamara and I have been making durable, custom painted cornhole boards for 5 years. I've lived in Wall Township since 2006. I'm a proud stay at home dad of 3 who took up woodworking as a hobby about 10 years ago.
                 </p>
 
                 <p className={classes.sectionText}>

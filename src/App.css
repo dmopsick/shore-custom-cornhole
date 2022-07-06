@@ -27,7 +27,7 @@ p, a, label, span, li {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-}
+} 
 
 /* Background images for the slideshow. This is not the best way but I can make it work for now */
 #giantsMets1Slide {

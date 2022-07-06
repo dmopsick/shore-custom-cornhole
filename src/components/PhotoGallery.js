@@ -16,8 +16,7 @@ const useStyles = makeStyles(theme => ({
         fontSize: "56px",
         margin: "auto",
         textAlign: "center",
-        width: "98%",
-        paddingTop: "160px"
+        width: "98%"
     }
 }));
 
@@ -40,6 +39,13 @@ export default function PhotoGallery() {
     return(
         <div>
             <div className={classes.section}>
+                 <p style={{
+                    textAlign: "left",
+                    marginLeft: "20px",
+                    paddingTop: "160px"
+                }}>
+                    <a href="/">&lt; Return Home</a>
+                </p>
                 <h2 className={classes.sectionHeader}>Gallery</h2>
                 <p 
                     style={{

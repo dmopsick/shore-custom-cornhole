@@ -1,6 +1,16 @@
 // Photos for the PhotoGallery -- Put here to save space on the file
 export const photos = [
     {
+        src: '/images/yankeesPhilliesAnchor1.jpeg',
+        width: 2,
+        height: 2
+    },
+    {
+        src: '/images/chiefsEaglesCompass1.jpeg',
+        width: 2,
+        height: 2
+    },
+    {
         src: "/images/yankeesChiefs1.jpeg",
         width: 2,
         height: 2
@@ -12,6 +22,11 @@ export const photos = [
     },
     {
         src: "/images/compassAnchor1.jpeg",
+        width: 2,
+        height: 2
+    },
+    {
+        src: '/images/chiefsEaglesCompass2.jpeg',
         width: 2,
         height: 2
     },
@@ -79,5 +94,10 @@ export const photos = [
         src: "/images/compass2.jpeg",
         width: 2,
         height: 2
+    },
+    {
+        src: "/images/chiefs4.jpeg",
+        width: 2,
+        height: 2   
     }
 ];

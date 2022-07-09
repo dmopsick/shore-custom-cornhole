@@ -94,8 +94,30 @@ export default function Home() {
                     </Link>
                 </div>   
             </div>
+            
+            <div id="chiefsEaglesCompass1Slide" className='sectionWithBackgroundImage'>
+                <div className={classes.movingArrowContainer}>
+                    <Link to="welcome"
+                        smooth={true}
+                        duration={500}
+                        style={{color: "white", flexBasis: "100%"}}>
+                        <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
+                    </Link>
+                </div>   
+            </div>
 
             <div id="compassAnchor1Slide" className='sectionWithBackgroundImage'>
+                <div className={classes.movingArrowContainer}>
+                    <Link to="welcome"
+                        smooth={true}
+                        duration={500}
+                        style={{color: "white", flexBasis: "100%"}}>
+                        <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
+                    </Link>
+                </div>   
+            </div>
+
+            <div id="yankeesPhilliesAnchor1S" className='sectionWithBackgroundImage'>
                 <div className={classes.movingArrowContainer}>
                     <Link to="welcome"
                         smooth={true}

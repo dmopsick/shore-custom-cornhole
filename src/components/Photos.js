@@ -1,17 +1,32 @@
 // Photos for the PhotoGallery -- Put here to save space on the file
 export const photos = [
     {
-        src: "/images/yankees3.jpeg",
+        src: '/images/wave1.jpeg',
         width: 2,
         height: 2
     },
     {
-        src: "/images/yankees4.jpeg",
+        src: '/images/wave2.jpeg',
         width: 2,
         height: 2
     },
     {
-        src: "/images/yankees5.jpeg",
+        src: '/images/wave3.jpeg',
+        width: 2,
+        height: 2
+    },
+    {
+        src: '/images/yankees3.jpeg',
+        width: 2,
+        height: 2
+    },
+    {
+        src: '/images/yankees4.jpeg',
+        width: 2,
+        height: 2
+    },
+    {
+        src: '/images/yankees5.jpeg',
         width: 2,
         height: 2
     },
@@ -26,17 +41,17 @@ export const photos = [
         height: 2
     },
     {
-        src: "/images/yankeesChiefs1.jpeg",
+        src: '/images/yankeesChiefs1.jpeg',
         width: 2,
         height: 2
     },
     {
-        src: "/images/giantsMets1.jpeg",
+        src: '/images/giantsMets1.jpeg',
         width: 2,
         height: 2
     },
     {
-        src: "/images/compassAnchor1.jpeg",
+        src: '/images/compassAnchor1.jpeg',
         width: 2,
         height: 2
     },
@@ -46,72 +61,72 @@ export const photos = [
         height: 2
     },
     {
-        src: "/images/philliesEagles1.jpeg",
+        src: '/images/philliesEagles1.jpeg',
         width: 2,
         height: 2
     },
     {
-        src: "/images/chiefs3.jpeg",
+        src: '/images/chiefs3.jpeg',
         width: 2,
         height: 2
     },
     {
-        src: "images/anchor1.jpeg",
+        src: 'images/anchor1.jpeg',
         width: 2,
         height: 2
     },
     {
-        src: "/images/yankeesChiefs2.jpeg",
+        src: '/images/yankeesChiefs2.jpeg',
         width: 2,
         height: 2
     },
     {
-        src: "/images/chiefs1.jpeg",
+        src: '/images/chiefs1.jpeg',
         width: 2,
         height: 2
     },
     {
-        src: "/images/compass1.jpeg",
+        src: '/images/compass1.jpeg',
         width: 2,
         height: 2
     },
     {
-        src: "/images/giantsMets3.jpeg",
+        src: '/images/giantsMets3.jpeg',
         width: 2,
         height: 2
     },
     {
-        src: "/images/yankees1.jpeg",
+        src: '/images/yankees1.jpeg',
         width: 2,
         height: 2
     },
     {
-        src: "/images/anchor2.jpeg",
+        src: '/images/anchor2.jpeg',
         width: 2,
         height: 2
     },
     {
-        src: "/images/chiefs2.jpeg",
+        src: '/images/chiefs2.jpeg',
         width: 2,
         height: 2
     },
     {
-        src: "/images/yankees2.jpeg",
+        src: '/images/yankees2.jpeg',
         width: 2,
         height: 2
     },
     {
-        src: "/images/giantsMets2.jpeg",
+        src: '/images/giantsMets2.jpeg',
         width: 2,
         height: 2
     },
     {
-        src: "/images/compass2.jpeg",
+        src: '/images/compass2.jpeg',
         width: 2,
         height: 2
     },
     {
-        src: "/images/chiefs4.jpeg",
+        src: '/images/chiefs4.jpeg',
         width: 2,
         height: 2   
     }

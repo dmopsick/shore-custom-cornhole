@@ -31,7 +31,6 @@ p, a, label, span, li {
 
 /* Background images for the slideshow. This is not the best way but I can make it work for now */
 #giantsMets1Slide {
-  display: block;
   background-image: url('/images/slideshow-images/giantsMets1S.jpeg');
 }
 
@@ -68,5 +67,6 @@ p, a, label, span, li {
 }
 
 #wave1Slide {
+  display: block;
   background-image: url('/images/slideshow-images/wave1S.jpeg');
 }

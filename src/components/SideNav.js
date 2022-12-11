@@ -10,8 +10,9 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import MenuIcon from '@mui/icons-material/Menu';
-import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
+import CollectionsIcon from '@mui/icons-material/Collections';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 export default function SideNav() {
     const [state, setState] = React.useState({
@@ -66,11 +67,24 @@ export default function SideNav() {
                     </ListItem>
                 </a>
 
+                <a className='linkNoDecoration' href="/gallery">
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <CollectionsIcon />
+                            </ListItemIcon>
+                            <ListItemText>
+                                Photo Gallery
+                            </ListItemText>
+                        </ListItemButton>
+                    </ListItem>
+                </a>
+
                 <a className='linkNoDecoration' href="/programming">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
-                                <FitnessCenterIcon />
+                                <ShoppingCartIcon />
                             </ListItemIcon>
                             <ListItemText>
                                 Place an order

@@ -29,6 +29,71 @@ p, a, label, span, li {
   background-position: 50% 50%;
 } 
 
+.sectionHeader {
+  font-size: 56px;
+  margin: auto;
+  text-align: center;
+  width: 98%;
+}
+
+.topHeader {
+  padding-top: 120px;
+}
+
+.sectionSubheader {
+  font-size: 32px;
+  margin: auto;
+  text-align: center;
+  width: 98%;
+}
+
+.sectionCaption {
+  font-size: 22px;
+  width: 90%;
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.section {
+  height: 850px;
+}
+
+.longSection {
+  height: 1200px;
+}
+
+.gallerySection {
+  height: 100%;
+  padding-bottom: 25px;
+}
+
+.sectionText {
+  font-size: 22px;
+  width: 85%;
+  margin: 10px auto;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.bodyText {
+  margin: auto;
+  width: 85%;
+}
+
+.largeBodyText {
+  margin: auto;
+  width: 85%;
+  font-size: 17px;
+}
+
+.darkBlueBackground {
+  background: #8090c2;
+}
+
+
 /* Background images for the slideshow. This is not the best way but I can make it work for now */
 #giantsMets1Slide {
   background-image: url('/images/slideshow-images/giantsMets1S.jpeg');

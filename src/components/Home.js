@@ -4,37 +4,9 @@ import { Link } from "react-scroll";
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 const useStyles = makeStyles(theme => ({
-    section: {
-        height: "825px"
-    },
-
     homeContainer: {
         color: "#000000",
         textAlign: "center"  
-    },
-
-    sectionHeader: {
-        fontSize: "56px",
-        margin: "auto",
-        textAlign: "center",
-        width: "98%",
-        marginTop: "0px !important"
-    },
-
-    sectionText: {
-        fontSize: "22px",
-        width: "80%",
-        margin: "auto",
-        marginTop: "10px",
-        marginBottom: "10px"
-    },
-
-    sectionCaption: {
-        fontSize: "22px",
-        width: "90%",
-        margin: "auto",
-        paddingTop: "15px",
-        marginBottom: "15px"
     },
 
     movingArrow: {
@@ -57,8 +29,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function Home() {
     const classes = useStyles();
-    var myIndex = 1;
-
+    var myIndex = 1; // For use in the sliedshow
 
     useEffect( () => {
 
@@ -195,17 +166,17 @@ export default function Home() {
                 </div>   
             </div>
 
-            <div id="welcome" className={classes.section} 
+            <div id="welcome" className='section'
                 style={{
                     background: "#80b1c2"
                 }}
             >
-                <h1 className={classes.sectionHeader}>Welcome to Shore Custom Cornhole!</h1>
-                <p className={classes.sectionText}>
-                    My name is Scott McNamara and I have been making durable, custom painted cornhole boards for 5 years. I've lived in Wall Township since 2006. I'm a proud stay at home dad of 3 who took up woodworking as a hobby about 10 years ago.
+                <h1 className='sectionHeader'>Welcome to Shore Custom Cornhole!</h1>
+                <p className='sectionText'>
+                    My name is Scott McNamara and I have been making durable, custom painted cornhole boards since 2017. I've lived in Wall Township since 2006. I'm a proud stay at home dad of 3 who took up woodworking as a hobby about 10 years ago.
                 </p>
 
-                <p className={classes.sectionText}>
+                <p className='sectionText'>
                     <a href="/gallery">View my work</a>
                 </p>
 
@@ -217,37 +188,33 @@ export default function Home() {
                 </Link>
             </div>
 
-            <div className={classes.section} id="contact"
+            <div className='section' id="contact"
                 style={{
                     background: "#8090c2"
                 }}>
-                <h1 className={classes.sectionHeader}>Get a Quote</h1>
-                <p className={classes.sectionText}>
+                <h1 className='sectionHeader'>Get a Quote</h1>
+                <p className='sectionText'>
                     Fill out the <a href="https://forms.gle/ZgMHir8UTQBF48ji8" target="_blank" rel="noopener noreferrer">Shore Custom Cornhole Order Form</a> and I will respond with more information in 2-4 business days.
                 </p>
 
-                <p className={classes.sectionText}>
+                <p className='sectionText'>
                     It is helpful if you attach reference images for your design to the form.  
                 </p>
 
-                <p className={classes.sectionText}>
+                <p className='sectionText'>
                     No Gmail account? No problem! Just email me at <a href="mailto:shorecustomcornhole@gmail.com">shorecustomcornhole@gmail.com</a> with your design ideas and images.
                 </p>
 
-                <p className={classes.sectionText}>
+                <p className='sectionText'>
                     Price depends on the requested design.  
                 </p>
 
-                <p className={classes.sectionText}>
+                <p className='sectionText'>
                     Cash or Venmo accepted.
                 </p>
 
-                <p className={classes.sectionText}>
+                <p className='sectionText'>
                     <a href="https://forms.gle/ZgMHir8UTQBF48ji8" target="_blank" rel="noopener noreferrer">Shore Custom Cornhole Order Form</a>
-                </p>
-                
-                <p className={classes.sectionText}>
-                    <a href="/gallery">View my work</a>
                 </p>
 
             </div>

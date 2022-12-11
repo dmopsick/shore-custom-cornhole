@@ -38,21 +38,9 @@ export default function PhotoGallery() {
 
     return(
         <div>
-            <div className={classes.section}>
-                 <p style={{
-                    textAlign: "left",
-                    marginLeft: "20px",
-                    paddingTop: "200px"
-                }}>
-                    <a href="/">&lt; Return Home</a>
-                </p>
-                <h2 className={classes.sectionHeader}>Gallery</h2>
-                <p 
-                    style={{
-                        textAlign: "center",
-                        marginBottom: "25px"
-                    }}
-                >
+            <div className='gallerySection darkBlueBackground'>
+                <h2 className='sectionHeader topHeader'>Gallery</h2>
+                <p className='sectionText centerText'>
                     View some of my previous work
                 </p>
 

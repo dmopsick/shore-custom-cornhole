@@ -166,11 +166,7 @@ export default function Home() {
                 </div>   
             </div>
 
-            <div id="welcome" className='section'
-                style={{
-                    background: "#80b1c2"
-                }}
-            >
+            <div id="welcome" className='section tealBackground'>
                 <h1 className='sectionHeader'>Welcome to Shore Custom Cornhole!</h1>
                 <p className='sectionText'>
                     My name is Scott McNamara and I have been making durable, custom painted cornhole boards since 2017. I've lived in Wall Township since 2006. I'm a proud stay at home dad of 3 who took up woodworking as a hobby about 10 years ago.

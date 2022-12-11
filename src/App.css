@@ -93,6 +93,25 @@ p, a, label, span, li {
   background: #8090c2;
 }
 
+.tealBackground {
+  background: #80b1c2;
+}
+
+.infoList {
+  text-align: left;
+  width: 85%;
+  margin: auto;
+  font-size: 18px;
+}
+
+.infoListItem {
+  margin-bottom: 5px;
+}
+
+.socialIconLink {
+  color: white;
+}
+
 
 /* Background images for the slideshow. This is not the best way but I can make it work for now */
 #giantsMets1Slide {

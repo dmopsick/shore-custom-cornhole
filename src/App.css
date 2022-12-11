@@ -41,10 +41,10 @@ p, a, label, span, li {
 }
 
 .sectionSubheader {
-  font-size: 32px;
+  font-size: 28px;
   margin: auto;
   text-align: center;
-  width: 98%;
+  width: 95%;
 }
 
 .sectionCaption {
@@ -97,6 +97,10 @@ p, a, label, span, li {
   background: #80b1c2;
 }
 
+.sandBackground {
+  background: #c2b280;
+}
+
 .infoList {
   text-align: left;
   width: 85%;
@@ -108,10 +112,9 @@ p, a, label, span, li {
   margin-bottom: 5px;
 }
 
-.socialIconLink {
-  color: white;
+.marginTop {
+  margin-top: 25px;
 }
-
 
 /* Background images for the slideshow. This is not the best way but I can make it work for now */
 #giantsMets1Slide {

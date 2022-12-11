@@ -4,11 +4,11 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 export default function ContactUs() {
     return(
-        <div className='section darkBlueBackground'>
-            <h1 className='sectionHeader topHeader'>Contact Us</h1>
-            <h2 className='sectionSubheader'>Let's design your dream board</h2>
+        <div className='section tealBackground'>
+            <h1 className='sectionHeader topHeader'>Contact Me</h1>
+            <h2 className='sectionSubheader'>Let's talk shop</h2>
 
-            <p className='sectionText'>
+            <p className='sectionText marginTop'>
                 <a href="mailto:shorecustomcornhole@gmail.com">
                     ShoreCustomCornhole@gmail.com <EmailIcon />
                 </a> 
@@ -17,11 +17,9 @@ export default function ContactUs() {
             <h2 className='sectionSubheader marginTop'>Social Media</h2>
             <ul className='infoList' style={{
                 textDecoration: 'none',
-                color: 'white'
             }}>
                 <li className='infoListItem'>
-                    <a className='socialIconLink'
-                        target="_blank"
+                    <a target="_blank"
                         rel="noreferrer noopener" 
                         href="https://www.instagram.com/shorecustomcornhole/">
                         Instagram<InstagramIcon fontSize='large' />

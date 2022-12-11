@@ -2,23 +2,21 @@ import React from 'react';
 
 export default function Footer() {
     return (
-        <div
+        <div className='sandBackground'
             style={{
-            background: "#c2b280",
-            color: "white",
-            height: "100px",
-            paddingTop: "10px",
-            textAlign: "center",
-            fontSize: "1.5 rem"
+                height: "100px",
+                paddingTop: "10px",
+                textAlign: "center",
+                fontSize: "1.5 rem",
+                borderTop: "1px solid white"
         }}>
-            <hr/>
             <a href="/gallery">
                 Photo Gallery
             </a>
             <br/>
             <a href="mailto:shorecustomcornhole@gmail.com">
                 ShoreCustomCornhole@gmail.com
-            </a> 
+            </a>  • 2022
 
 
         </div>

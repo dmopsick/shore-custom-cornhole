@@ -80,14 +80,14 @@ export default function SideNav() {
                     </ListItem>
                 </a>
 
-                <a className='linkNoDecoration' href="/programming">
+                <a className='linkNoDecoration' href="/order">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
                                 <ShoppingCartIcon />
                             </ListItemIcon>
                             <ListItemText>
-                                Place an order
+                                Place an Order
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>

@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import { makeStyles } from '@mui/styles';
 import { Link } from "react-scroll";
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import HandymanIcon from '@mui/icons-material/Handyman';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import EmailIcon from '@mui/icons-material/Email';
 
 const useStyles = makeStyles(theme => ({
     homeContainer: {
@@ -173,7 +176,7 @@ export default function Home() {
                 </p>
 
                 <p className='sectionText'>
-                    <a href="/gallery">View my work</a>
+                    <a href="/gallery">View my work <HandymanIcon /></a>
                 </p>
 
                 <Link to="contact"
@@ -184,13 +187,10 @@ export default function Home() {
                 </Link>
             </div>
 
-            <div className='section' id="contact"
-                style={{
-                    background: "#8090c2"
-                }}>
+            <div className='section darkBlueBackground' id="contact">
                 <h1 className='sectionHeader'>Get a Quote</h1>
                 <p className='sectionText'>
-                    Fill out the <a href="https://forms.gle/ZgMHir8UTQBF48ji8" target="_blank" rel="noopener noreferrer">Shore Custom Cornhole Order Form</a> and I will respond with more information in 2-4 business days.
+                    Fill out the <a href="https://forms.gle/ZgMHir8UTQBF48ji8" target="_blank" rel="noopener noreferrer">Shore Custom Cornhole Order Form <ShoppingCartIcon /></a> and I will respond with more information in 2-4 business days.
                 </p>
 
                 <p className='sectionText'>
@@ -198,19 +198,15 @@ export default function Home() {
                 </p>
 
                 <p className='sectionText'>
-                    No Gmail account? No problem! Just email me at <a href="mailto:shorecustomcornhole@gmail.com">shorecustomcornhole@gmail.com</a> with your design ideas and images.
+                    No Gmail account? Email me at <a href="mailto:shorecustomcornhole@gmail.com">shorecustomcornhole@gmail.com <EmailIcon /></a> with your design ideas and images.
                 </p>
 
                 <p className='sectionText'>
-                    Price depends on the requested design.  
+                    Price depends on the requested design. Cash or Venmo accepted.
                 </p>
 
                 <p className='sectionText'>
-                    Cash or Venmo accepted.
-                </p>
-
-                <p className='sectionText'>
-                    <a href="https://forms.gle/ZgMHir8UTQBF48ji8" target="_blank" rel="noopener noreferrer">Shore Custom Cornhole Order Form</a>
+                    <a href="https://forms.gle/ZgMHir8UTQBF48ji8" target="_blank" rel="noopener noreferrer">Shore Custom Cornhole Order Form <ShoppingCartIcon /></a>
                 </p>
 
             </div>

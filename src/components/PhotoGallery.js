@@ -19,7 +19,7 @@ export default function PhotoGallery() {
 
     return(
         <div>
-            <div className='gallerySection darkBlueBackground'>
+            <div className='gallerySection tealBackground'>
                 <h2 className='sectionHeader topHeader'>Gallery</h2>
                 <p className='sectionText centerText'>
                     View some of my previous work

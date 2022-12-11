@@ -4,6 +4,7 @@ import React from 'react';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { makeStyles } from '@mui/styles';
 import Logo from '../images/logo_header.png';
+import SideNav from './SideNav';
 
 const useStyles = makeStyles(theme => ({
     navBar: {
@@ -16,11 +17,11 @@ const useStyles = makeStyles(theme => ({
     header: {
         fontFamily: "Lato !important",
         fontWeight: "bold !important",
-        fontSize: "24px",
+        fontSize: "28px",
         color: "white",
         textDecoration: "none",
         margin: "auto",
-        textAlign: "center"
+        textAlign: "left"
     }
 }));
 
@@ -33,12 +34,15 @@ export default function Header(props) {
             <HideOnScroll {...props}>
                 <AppBar>
                     <Toolbar className={classes.navBar}>
-                        <a className={classes.header} href ="/">       
+                        <SideNav />    
+                        <a className={classes.header} href ="/">   
+                            
                             <img src={Logo}
                             alt="Shore Custom Cornhole logo"
                             style={{
-                                width: "90%",
-                                maxWidth: "600px"
+                                width: "80%",
+                                maxWidth: "600px",
+                                margin: 'auto'
                             }}
                             />
                         </a>

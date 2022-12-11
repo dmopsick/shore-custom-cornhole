@@ -61,7 +61,7 @@ export default function SideNav() {
                                 <AccountCircleIcon />
                             </ListItemIcon>
                             <ListItemText>
-                                About Us
+                                About Me
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>

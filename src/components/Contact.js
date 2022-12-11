@@ -2,7 +2,6 @@ import React from 'react';
 import EmailIcon from '@mui/icons-material/Email';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
-
 export default function ContactUs() {
     return(
         <div className='section darkBlueBackground'>
@@ -23,7 +22,7 @@ export default function ContactUs() {
                 <li className='infoListItem'>
                     <a className='socialIconLink'
                         target="_blank"
-                        rel="noreferrer" 
+                        rel="noreferrer noopener" 
                         href="https://www.instagram.com/shorecustomcornhole/">
                         Instagram<InstagramIcon fontSize='large' />
                     </a>

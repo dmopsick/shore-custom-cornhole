@@ -1,28 +1,9 @@
 import React, { useState, useCallback } from "react";
-import { makeStyles } from '@mui/styles';
 import Gallery from 'react-photo-gallery-react17'; 
 import Carousel, { Modal, ModalGateway } from 'react-images';
 import { photos } from './Photos';
 
-const useStyles = makeStyles(theme => ({
-    section: {
-        height: "100%",
-        background: "#8090c2",
-        color: "white",
-        paddingBottom: "25px"
-    },
-
-    sectionHeader: {
-        fontSize: "56px",
-        margin: "auto",
-        textAlign: "center",
-        width: "98%"
-    }
-}));
-
 export default function PhotoGallery() {
-    const classes = useStyles();
-
     const [currentImage, setCurrentImage] = useState(0);
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
 

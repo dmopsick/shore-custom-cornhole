@@ -1,6 +1,11 @@
 // Photos for the PhotoGallery -- Put here to save space on the file
 export const photos = [
     {
+        src: '/images/northWall1.jpeg',
+        width: 2,
+        height: 2
+    },
+    {
         src: '/images/wave1.jpeg',
         width: 2,
         height: 2
